@@ -31,6 +31,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       #header {
         padding-top: 32px;
       }
+      .flex-wrap {
+        @apply(--layout-horizontal);
+        @apply(--layout-wrap);
+        /*width: 600px;*/
+      }
       .flex-vertical {
         @apply(--layout-vertical);
         @apply(--layout-center);
@@ -75,6 +80,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .card {
         padding: 0 0 12px 0;
         margin-bottom: 32px;
+        height: 100%;
       }
       .card-heading {
         /*background: rgba(0,59,100,0.72);*/
@@ -94,22 +100,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <!--<div class="container flex-horizontal" style="padding-bottom:4px">-->
-      <!--<div><h1>iOS App</h1></div>-->
-      <!--<div class="flexchild description">-->
-        <!--<iron-icon icon="star"></iron-icon>-->
-        <!--<iron-icon icon="star"></iron-icon>-->
-        <!--<iron-icon icon="star"></iron-icon>-->
-        <!--<iron-icon icon="star-half"></iron-icon>-->
-        <!--<iron-icon icon="star-border"></iron-icon>-->
-      <!--</div>-->
-      <!--<div class="value"></div>-->
-    <!--</div>-->
-    <!--<div class="container flex-horizontal" style="padding-top:0">-->
-      <!--<div>Showing <u>last 15 minutes</u>.</div>-->
-    <!--</div>-->
-
-
     <div class="container flex-vertical">
       <div><h1>iOS App</h1></div>
       <div class="flexchild-vertical">
@@ -122,10 +112,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </div>
       <div>Showing <u>December 18, 2016</u>.</div>
-    </div>
+</div>
+    <!--<div class="flex-wrap">-->
     <div class="card">
       <div class="container flex-horizontal card-heading">
-        <div class="icon"><iron-icon icon="build"></iron-icon></div>
+        <div class="icon"><iron-icon icon="monetization-on"></iron-icon></div>
         <div class="flexchild description">Finance</div>
         <div class="value"></div>
       </div>
@@ -133,31 +124,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="container flex-horizontal">
           <div class="icon"></div>
           <div class="flexchild description">Revenue</div>
-          <div class="value">$150,964</div>
+          <div class="value">$XXX,XXX</div>
         </div>
         <div class="container flex-horizontal">
           <div class="icon"></div>
           <div class="flexchild description">Average Order Value</div>
-          <div class="value">$228</div>
+          <div class="value">$XXX</div>
         </div>
         <div class="container flex-horizontal">
           <div class="icon"></div>
           <div class="flexchild description">Conversion Rate</div>
-          <div class="value">1.97%</div>
+          <div class="value">X.XX%</div>
         </div>
       </div>
     </div>
 
     <div class="card">
-      <!--<div class="circle">1</div>-->
-      <!--<div class="container flex-horizontal" id="title">-->
-        <!--<div><h1>Mobile Apps</h1></div>-->
-        <!--<div class="flexchild description">[stars]</div>-->
-        <!--<div class="value">LOGO</div>-->
-      <!--</div>-->
-      <!--<h1>Mobile Apps</h1>-->
-      <!--<p>Showing <u>last 15 minutes</u>.</p>-->
-
           <div class="container flex-horizontal card-heading">
             <div class="icon"><iron-icon icon="build"></iron-icon></div>
             <div class="flexchild description">Health</div>
@@ -167,68 +149,63 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="container flex-horizontal">
           <div class="icon"></div>
           <div class="flexchild description">API Response Time</div>
-          <div class="value">79ms</div>
+          <div class="value">XXms</div>
         </div>
           <div class="container flex-horizontal">
             <div class="icon"></div>
             <div class="flexchild description">Crash Rate</div>
-            <div class="value">0.15%</div>
+            <div class="value">X.XXX%</div>
           </div>
           <div class="container flex-horizontal">
             <div class="icon"></div>
             <div class="flexchild description">Error Rate</div>
-            <div class="value">0.008%</div>
+            <div class="value">X.XXX%</div>
           </div>
         <div class="container flex-horizontal">
           <div class="icon"></div>
           <div class="flexchild description">Uptime</div>
-          <div class="value">99.95%</div>
+          <div class="value">XX.XX%</div>
         </div>
         </div>
       </div>
 
       <div class="card">
-
           <div class="container flex-horizontal card-heading">
             <div class="icon"><iron-icon icon="supervisor-account"></iron-icon></div>
-            <div class="flexchild description">Customer Behaviour</div>
+            <div class="flexchild description">Engagement</div>
             <div class="value"></div>
           </div>
         <div class="data-list">
-
-
-
           <div class="container flex-horizontal">
             <div class="icon"></div>
             <div class="flexchild description">Unique Visitors</div>
-            <div class="value">21,862</div>
+            <div class="value">XX,XXX</div>
           </div>
           <div class="container flex-horizontal">
             <div class="icon"></div>
             <div class="flexchild description">Visits</div>
-            <div class="value">33,613</div>
-          </div>
-
-
-          <div class="container flex-horizontal">
-            <div class="icon"></div>
-            <div class="flexchild description">Searches per second</div>
-            <div class="value">16</div>
+            <div class="value">XX,XXX</div>
           </div>
           <div class="container flex-horizontal">
             <div class="icon"></div>
             <div class="flexchild description">Sign-In Rate</div>
-            <div class="value">18%</div>
+            <div class="value">XX%</div>
           </div>
           <div class="container flex-horizontal">
             <div class="icon"></div>
             <div class="flexchild description">Checkout Time Spent</div>
-            <div class="value">210s</div>
+            <div class="value">XXs</div>
+          </div>
+          <div class="container flex-horizontal">
+            <div class="icon"></div>
+            <div class="flexchild description">Peak Searches per second</div>
+            <div class="value">X</div>
           </div>
         </div>
       </div>
-
-    </div>
+      </div>
+    <!--</div>-->
+    <!--</div>-->
   </template>
 
   <script>
